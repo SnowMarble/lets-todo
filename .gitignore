@@ -11,3 +11,5 @@
 #.pnp.*
 
 docker/postgres-data
+
+node_modules
