@@ -1,0 +1,39 @@
+
+
+GET http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "kraccoon@kakao.com",
+  "password": "1234"
+}
+
+###
+
+GET http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+  "email": "kraccoon@kakao.com",
+  "password": "1234"
+}
+
+###
+
+GET http://localhost:3000/api/user/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk2NDczOTBlLWRiNzYtNGE0Ny04YmQ2LWYzMWJjY2I4YzBkNSIsImVtYWlsIjoia3JhY2Nvb25Aa2FrYW8uY29tIiwibmFtZSI6bnVsbCwiaWF0IjoxNjg3MjUxMTg5fQ.9_QYo_9-QJzsDF5FB6_gYLU4lx9Aeo51hH2PWfWVsxM
+
+###
+
+POST http://localhost:3000/api/todo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk2NDczOTBlLWRiNzYtNGE0Ny04YmQ2LWYzMWJjY2I4YzBkNSIsImVtYWlsIjoia3JhY2Nvb25Aa2FrYW8uY29tIiwibmFtZSI6bnVsbCwiaWF0IjoxNjg3MjUxMTg5fQ.9_QYo_9-QJzsDF5FB6_gYLU4lx9Aeo51hH2PWfWVsxM
+Content-Type: application/json
+
+{
+  "title": "test"
+}
+
+###
+
+GET http://localhost:3000/api/todo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk2NDczOTBlLWRiNzYtNGE0Ny04YmQ2LWYzMWJjY2I4YzBkNSIsImVtYWlsIjoia3JhY2Nvb25Aa2FrYW8uY29tIiwibmFtZSI6bnVsbCwiaWF0IjoxNjg3MjUxMTg5fQ.9_QYo_9-QJzsDF5FB6_gYLU4lx9Aeo51hH2PWfWVsxM

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+    <script defer src="/public/my.js"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <div
+      class="flex relative flex-col w-2/5 shadow-lg h-fit p-5 rounded-lg text-slate-700 items-center"
+    >
+      <h2 id="name" class="text-xl font-semibold uppercase"></h2>
+
+      <p id="email" class="text-md text-slate-500"></p>
+      <div class="flex w-full gap-2 mt-4">
+        <div
+          class="grow shadow flex items-center justify-center p-4 flex flex-col gap-2"
+        >
+          <p class="text-xs font-medium">Total Todos</p>
+          <p id="total" class="font-sm font-semibold"></p>
+        </div>
+        <div
+          class="grow shadow flex items-center justify-center p-4 flex flex-col gap-2"
+        >
+          <p class="text-xs font-medium">Today's Todo</p>
+          <p id="today" class="font-sm font-semibold"></p>
+        </div>
+        <div
+          class="grow shadow flex items-center justify-center p-4 flex flex-col gap-2"
+        >
+          <p class="text-xs font-medium">Rank</p>
+          <p id="rank" class="font-sm font-semibold"></p>
+        </div>
+      </div>
+
+      <div class="flex mt-4 justify-end w-full gap-2 text-xs">
+        <a href="/"><button class="px-4 py-1 rounded-lg bg-slate-500 text-slate-50">Go to main</button></a>
+        <button id="logout" class="px-4 py-1 rounded-lg border border-slate-200">Logout</button>
+      </div>
+    </div>
+  </body>
+</html>
